@@ -7,6 +7,16 @@
             "request": "attach",
             "port": 9091,
             "preLaunchTask": "func: host start"
-        }
+        },
+        {
+            "name": "Python: pytest",
+            "type": "python",
+            "request": "launch",
+            "python":"/Users/vincentcheng/vc_code/sush/sush-test/.venv/bin/python",
+            "program":"/Users/vincentcheng/vc_code/sush/sush-test/.venv/bin/pytest",
+            "args": [
+                // "-v", "-k", "test_check_blacklist", "/Users/vincentcheng/vc_code/stf-lake/stflake/tests/test_check_blacklist.py", "-m", '""', "-vv"
+            ],
+        },
     ]
 }
